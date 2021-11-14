@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
     <script src="app.js" defer></script>
-    <title>Calculator x</title>
+    <title>Domino x</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        NODE BASED CALCULATOR
+                        Add New Dominos
                     </div>
                     <div class="card-body">
                         <div class="row justify-content-center">
@@ -26,26 +26,18 @@
                             </div>
                             <div class="col-3">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="d1">
+                                    <input type="text" class="form-control" id="left">
+                                    <small> left number</small>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="form-group">
-                                    <select class="form-control" id="action">
-                                        <option>+</option>
-                                        <option>-</option>
-                                        <option>X</option>
-                                        <option>/</option>
-                                    </select>
+                                    <input type="text" class="form-control" id="right">
+                                    <small> right number</small>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="d2">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-info">Calc</button>
+                                <button type="button" id="add-new" class="btn btn-info">Add</button>
                             </div>
                             <div class="col-4">
                                 <div class="alert alert-success" role="alert" style="display:none; text-align:center">
@@ -56,6 +48,43 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        All Dominos
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div class="dominos">
+                                    <div class="domino">
+                                        <div class="left-side">
+                                            5
+                                        </div>
+                                        <div class="right-side">
+                                            0
+                                        </div>
+                                    </div>
+                                    <div class="domino">
+                                        <div class="left-side">
+                                            3
+                                        </div>
+                                        <div class="right-side">
+                                            1
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
